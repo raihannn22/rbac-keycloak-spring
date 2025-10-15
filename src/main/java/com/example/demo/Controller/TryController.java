@@ -16,8 +16,8 @@ public class TryController {
         return ResponseEntity.ok("Hello!");
     }
 
-    @GetMapping("/user")
-    @PreAuthorize("hasRole('role_user')")
+    @GetMapping("/can_view_user")
+    @PreAuthorize("hasRole('CAN_VIEW_USER')")
     public ResponseEntity<String> helloUser() {
         return ResponseEntity.ok("Hello From User!");
     }
