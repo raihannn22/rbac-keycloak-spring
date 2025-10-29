@@ -17,3 +17,10 @@ jwt:
     converter:
       resource-id: demo
       principle-attribute: preferred_username
+
+keycloak:
+  realm: demo-first
+  endpoint: http://localhost:9090
+  application:
+    client-id: demo-login
+    client-secret: oDUOFuvUskXQMS6RA0VSccdIOQ5eQYPW

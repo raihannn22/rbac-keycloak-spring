@@ -7,6 +7,10 @@ services:
     environment:
       KEYCLOAK_ADMIN: admin
       KEYCLOAK_ADMIN_PASSWORD: password
+      KC_DB: postgres
+      KC_DB_URL: jdbc:postgresql://host.docker.internal:5432/keycloak_demo
+      KC_DB_USERNAME: postgres
+      KC_DB_PASSWORD: admin
     volumes:
       - keycloak_data:/opt/keycloak/data
     command:
